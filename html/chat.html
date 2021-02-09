@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="style.css"/>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            padding: 10px;
+            border-bottom: 1px solid #000;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .chat01{
+            background-color: rgb(30, 66, 66);
+            
+            max-height: 100%;
+       }
+        .chat02{
+        background-color: #fff;
+            max-height: 100%;
+            position: relative;
+            height: 100%;
+        }
+        .close{
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 20px;
+            color:rgb(216, 14, 14)
+        }
+        .image-icon{
+            width: 30px;
+            height: 30px;
+            border-radius: 30px;
+        }
+        .res-chat{
+            background-color: royalblue;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="chat01">
+            <p>John Doe</p>
+            <p>John Doe</p>
+            <p>John Doe</p>
+            <p>John Doe</p>
+            <p>John Doe</p>
+        </div>
+        <div class="chat02">
+           
+            <i class="fas fa-times close"></i>
+            <image src='images/avatar.jpg' class='image-icon'></image>
+            <input type="text" placeholder="Hello"/>
+            <div>
+                <div class="res-chat">
+                    <h2>Hello.</h2>
+                    <h2>How may I help you></h2>
+                </div>
+                <image src='images/avatar.jpg' class='image-icon'></image>
+                
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

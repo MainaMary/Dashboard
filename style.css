@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar-wrapper{
+    background-color: rgb(30, 57, 116);
+    width: 100%;
+    height: 50px;
+}
+ul{
+    margin: 0;
+}
+ul li{
+    list-style: none;
+
+    padding: 20px 0;
+    
+    border-bottom:  1px solid #fff;
+}
+.fas{
+    color: #fff;
+    margin-left: 20px;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.side-menu{
+    height: 100%;
+    width: 300px;
+    margin-top: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgb(30, 57, 116);
+    transition: all 0.5s ease-in-out;
+}
+ul li:hover{
+    background-color: rgb(48, 51, 73);
+    border: none;
+}
+.text{
+    margin-left: 60px;
+}
+.main-menu{
+    transition: margin-left .5s;
+    padding: 20px;
+    
+    margin-left: 300px;
+    
+}
+h2{
+margin-top: 120px;
+background-color: #fff;
+text-transform: uppercase;
+text-align: center;
+border: 1px solid silver;
+}
+.close{
+    position: absolute;
+    right: 20px;
+    top: 0;
+    cursor: pointer;
+}
+.close, .open{
+    display: none;
+}
+/* styling the input box */
+.form-wrapper{
+    text-align: center;
+}
+.input-txt{
+    width: 300px;
+    padding: 10px;
+    margin-right: 5px;
+    outline: none;
+}
+.search-btn{
+    width: 80px;
+    padding: 10px;
+    outline: none;
+    background-color: rgb(30, 57, 116);
+    border: none;
+}
+
+/* styling the card */
+
+.avatar-img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+.card{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    
+    padding: 10px;
+    box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.2),
+                 15px 15px 15px rgba(0, 0, 0, 0.1);
+    
+}
+.bio-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 80vh;
+}
+
+.card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+
+}
+@media screen and (max-width: 960px){
+    .open, .close{
+        display: block;
+    }
+    .side-menu{
+        width: 0;
+    }
+    .main-menu{
+        margin-left: 0;
+    }
+    .card-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
