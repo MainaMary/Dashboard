@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.main-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    width: 100%;
+    
+}
+.search-wrapper{
+    padding-top: 50px;
+    text-align: center;
+
+}
+.wrapper{
+    width: 1000px;
+}
+
+.name-wrapper{
+    margin-top: 100px;
+    
+}
+.name-wrapper p{
+    border-bottom: 1px solid #000;
+    margin: 20px auto;
+    font-weight: 500;
+}
