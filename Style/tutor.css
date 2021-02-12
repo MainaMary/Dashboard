@@ -72,13 +72,27 @@ border: 1px solid silver;
 .close, .open{
     display: none;
 }
+
 /* styling the input box */
 .form-wrapper{
     text-align: center;
+    position: relative;
+    
+    
+   
 }
+.search-icon{
+position: absolute;
+color: #000;
+top: 13px;
+align-items: center;
+
+}
+
 .input-txt{
-    width: 300px;
-    padding: 10px;
+    width: 30%;
+    align-items: center;
+    padding: 10px 40px;
     margin-right: 5px;
     outline: none;
 }
@@ -133,5 +147,28 @@ border: 1px solid silver;
     }
     .card-wrapper{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .form-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 10px auto;
+    }
+    .input-txt{
+        margin: 20px auto;
+        width: 50%;
+    }
+    .search-icon{
+        left: 100px;
+        top: 30px;
+    }
+    .location{
+        left: 100px;
+        top: 110px;
+    }
+    .search-btn{
+        margin: 10px auto;
+        width: 50%;
     }
 }
